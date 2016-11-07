@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/order.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <title>Galvanize Delivers</title>
+
+<!-- CSS  -->
+
+  <link href="./Galvanize Delivers_files/icon" rel="stylesheet">
+  <link href="./Galvanize Delivers_files/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="./Galvanize Delivers_files/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+
+  <nav class="light-blue darken-3" role="navigation">
+    <div class="nav-wrapper"><a id="logo-container" class="brand-logo" href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/index.html">Galvanize Delivers</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/index.html">Home</a></li>
+      </ul>
+
+      <!-- SIDE-NAV -->
+      <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+        <li><a href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/index.html">Home</a></li>
+      </ul>
+      <a href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/order.html#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+<!-- MENU SECTION -->
+  <div class="container">
+    <div class="row col s12">
+      <h3 class="col s6">Menu</h3>
+      <h3 class="col s6">Order</h3>
+    <!-- Royale with Cheese -->
+      <div>
+           <div class="col s3">
+             <div class="card small">
+               <div class="card-image">
+                 <img src="./Galvanize Delivers_files/burger.jpg">
+               </div>
+               <div class="card-content">
+                 <h6>Royale with Cheese</h6>
+                 <p><small>$8.99</small></p>
+               </div>
+               <div class="card-action">
+                 <a id="burger" href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/order.html#" class="pink-text" type="submit">Add to Order</a>
+               </div>
+             </div>
+           </div>
+      </div>
+    <!-- Arugula Pie -->
+      <div>
+           <div class="col s3">
+             <div class="card small">
+               <div class="card-image">
+                 <img src="./Galvanize Delivers_files/pizza.jpg">
+               </div>
+               <div class="card-content">
+                 <h6>Arugula Pie</h6>
+                 <p><small>$11.99</small></p>
+               </div>
+               <div class="card-action">
+                 <a id="pizza" href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/order.html#" class="pink-text" type="submit">Add to Order</a>
+               </div>
+             </div>
+           </div>
+      </div>
+  <!-- ORDER SECTION -->
+      <form id="order" action="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/order.html" class="col s6">
+        <table>
+            <thead>
+              <tr>
+                  <th data-field="name">Item</th>
+                  <th data-field="price">Item Price</th>
+                  <th data-field="quanity">Quanity</th>
+                  <th data-field="multiplier">=</th>
+                  <th data-field="total">Price</th>
+              </tr>
+            </thead>
+            <!-- function burgerSum(){
+              burgerTotal = burgerQuanity * burgerPrice;
+              $( '#burger_total' ).html(burgerTotal);
+            } -->
+            <tbody>
+              <tr class="grey lighten-2">
+                <td>Royale with Cheese</td>
+                <td class="pricePerBurger">$8.99</td>
+                <td id="burger_quanity" min="0">4</td>
+                <td class="multiply"></td>
+                <td id="burger_total">35.96</td>
+              </tr>
+              <tr>
+                <td>Arugula Pie</td>
+                <td class="pricePerPizza">$11.99</td>
+                <td id="pizza_quanity" min="0">4</td>
+                <td class="multiply"></td>
+                <td id="pizza_total" <="" td="">59.96</td></tr>
+              <tr class="grey lighten-2">
+                <td>Smoked Swine</td>
+                <td class="pricePerRib">$14.99</td>
+                <td id="ribs_quanity" min="0">4</td>
+                <td class="multiply"></td>
+                <td id="ribs_total">47.96</td>
+              </tr>
+              <tr>
+                <td>Ice Cream Biscut</td>
+                <td class="pricePerIceCream">$7.99</td>
+                <td id="iceCream_quanity" min="0">4</td>
+                <td class="multiply"></td>
+                <td id="iceCream_total">31.96</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td id="subtotal" class="right-align">0</td>
+                <td>=</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td class="right-align">Tax</td>
+                <td>=</td>
+                <td class="placeholders">T</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td class="right-align">Total</td>
+                <td>=</td>
+                <td>T</td>
+              </tr>
+            </tbody>
+          </table>
+      </form>
+    </div>
+
+    <!-- Smoked Swine -->
+
+    <div class="row col s6">
+      <div class="col s3">
+        <div class="card small">
+          <div class="card-image">
+            <img src="./Galvanize Delivers_files/ribs.jpg">
+          </div>
+          <div class="card-content">
+            <h6>Smoked Swine</h6>
+            <p><small>$14.99</small></p>
+          </div>
+          <div class="card-action">
+            <a id="ribs" href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/order.html#" class="pink-text" type="submit">Add to Order</a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Ice Cream Biscut -->
+
+      <div class="col s3">
+        <div class="card small">
+          <div class="card-image">
+            <img src="./Galvanize Delivers_files/ice_cream.jpg">
+          </div>
+          <div class="card-content">
+            <h6>Ice Cream Biscut</h6>
+            <p><small>$7.99</small></p>
+          </div>
+          <div class="card-action">
+            <a id="iceCream" href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/order.html#" class="pink-text" type="submit">Add to Order</a>
+          </div>
+        </div>
+      </div>
+
+<!-- FORM -->
+
+      <form action="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/order.html" id="information" class="col s5">
+        <div class="row">
+          <div class="input-field col s10">
+            <i class="material-icons prefix pink-text">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">First Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s10">
+            <i class="material-icons prefix pink-text" required="">phone</i>
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Telephone</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s10">
+            <i class="material-icons prefix pink-text">business</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="address">Address</label>
+          </div>
+        </div>
+        <div class="row center">
+          <a href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/404.html" id="download-button" class="btn-large waves-effect waves-light pink">Place an Order</a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+<br><br>
+
+
+  <footer class="light-blue darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Galvanize Delivers</h5>
+          <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
+        </div>
+
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/index.html">Home</a></li>
+            <li><a class="white-text" href="file:///Users/suzannerashka/Documents/Galvanize/Week3/galvanize-delivers/order.html">Order Delivery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright light-blue darken-3">
+<!-- ***********change color of footer background -->
+      <div class="light-blue darken-4">
+        <a class="blue-grey-text text-lighten-3">2016 Galvanize Delivers</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="./Galvanize Delivers_files/jquery-2.1.1.min.js"></script>
+  <script src="./Galvanize Delivers_files/materialize.js"></script>
+  <script src="./Galvanize Delivers_files/init.js"></script>
+  <script src="./Galvanize Delivers_files/script.js"></script><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+
+  
+
+<div class="hiddendiv common"></div></body></html>
