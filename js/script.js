@@ -30,32 +30,38 @@ $(document).ready(function(){
     burgerQuanity += 1;
     // function to save that variable to quanity field/order.html
     $( "#burger_quanity" ).html(burgerQuanity);
+    return false;
   });
   //ribs
   $( "#ribs" ).click(function() {
     ribsQuanity += 1;
     $( "#ribs_quanity" ).html(ribsQuanity);
+    return false;
   });
   //pizza
   $( "#pizza" ).click(function() {
     pizzaQuanity += 1;
     $( "#pizza_quanity" ).html(pizzaQuanity);
+    return false;
   });
   //ice cream
   $( "#iceCream" ).click(function() {
     iceCreamQuanity += 1;
     $( "#iceCream_quanity" ).html(iceCreamQuanity);
+    return false;
   });
 
 // ONCLICK to add price to individual totals
 
   $( "#burger" ).click(function() {
       burgerTotal += 8.99;
+
     $( "#burger_total" ).html(burgerTotal.toFixed(2));
     // $( "burger_total" ).html(burgerQuanity*burgerPrice);
   });
   $( "#ribs" ).click(function() {
       ribsTotal += 11.99;
+
     $( "#ribs_total" ).html(ribsTotal.toFixed(2));
   });
   $( "#pizza" ).click(function() {
@@ -87,3 +93,34 @@ $(document).ready(function(){
     grandTotal = subTotal + taxTotal;
     $(".grandwoohaatotal").html(grandTotal.toFixed(2));
   });
+
+//  Materialize.toast('Please submit your name!', 4000, )
+//Auto updater to link id's to receipt page.
+$(document).ready(function() {
+    Materialize.updateTextFields();
+  });
+  $('.download-button').click(function(){
+    Materialize.toast('!', 4000);
+    return false;
+  });
+
+var tempName = '';
+  $('.icon_prefix').html(tempName);
+  // $("form['.validate']").each(function(){
+  //   $(this).validate();
+  // });
+
+
+//   $.validator.setDefaults({
+//     onkeyup:false,
+//     errorClass: 'invalid',
+//     validClass: 'valid',
+//     submitHandler: function(form){
+//
+//   $(form).find(".download-button").prop('disabled', true);
+// },
+// errorPlacement:
+// function(error, element){
+//   error.insertAfter($(element).siblings('validate'));
+// }
+// });

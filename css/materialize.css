@@ -2858,6 +2858,8 @@ video.responsive-video {
   position: relative;
   overflow: hidden;
   height: 500px;
+  background: url(../img/hero.jpg);
+
 }
 
 .parallax {
